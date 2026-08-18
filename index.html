@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auré — European kitchen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+  <!-- ============ OVERLAY / BURGER MENU ============ -->
+  <div class="overlay-menu" id="overlay-menu" aria-hidden="true">
+    <div class="overlay-menu__scrim" data-burger-close></div>
+    <div class="overlay-menu__content">
+      <div class="overlay-menu__header">
+        <a href="#top" class="overlay-menu__brand" data-burger-close>Auré</a>
+        <button class="icon-btn overlay-menu__close" aria-label="Close menu" data-burger-close>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <nav class="overlay-menu__nav">
+        <a href="#about" class="overlay-menu__link" data-burger-close>
+          <span class="overlay-menu__num">01</span>
+          <span class="overlay-menu__text">About Us</span>
+        </a>
+        <a href="#menu" class="overlay-menu__link" data-burger-close>
+          <span class="overlay-menu__num">02</span>
+          <span class="overlay-menu__text">Our Menu</span>
+        </a>
+        <a href="#interior" class="overlay-menu__link" data-burger-close>
+          <span class="overlay-menu__num">03</span>
+          <span class="overlay-menu__text">Interior</span>
+        </a>
+        <a href="#events" class="overlay-menu__link" data-burger-close>
+          <span class="overlay-menu__num">04</span>
+          <span class="overlay-menu__text">Events</span>
+        </a>
+        <a href="#reservation" class="overlay-menu__link" data-burger-close>
+          <span class="overlay-menu__num">05</span>
+          <span class="overlay-menu__text">Reservation</span>
+        </a>
+      </nav>
+
+      <div class="overlay-menu__footer">
+        <div class="overlay-menu__info">
+          <span>Amir Temur Avenue · Tashkent</span>
+          <span>Open Tue–Sun · 8:00 – 23:00</span>
+          <a href="tel:+998900000000">+998 90 00 00 00</a>
+        </div>
+        <a href="#reservation" class="btn-confirm btn-confirm--inline" data-burger-close>
+          Reserve a table
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <!-- Replace with <img> or set background-image on .hero__bg in styles.css -->
+    <img class="hero__bg" src="img/hero.jpg">
+    <div class="hero__scrim"></div>
+
+    <div class="hero__inner">
+      <div class="meta-bar">
+        <span>Amir Temur Avenue&nbsp;· TASHKENT</span>
+        <span>Open Tue–Sun · 8:00 – 23:00</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#top" class="nav__brand">Auré</a>
+        <div class="nav__actions">
+          <button class="icon-btn" aria-label="Open menu" data-burger-toggle aria-expanded="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+          <a href="#reservation" class="btn-outline">Reservation</a>
+        </div>
+      </nav>
+
+      <div class="hero__spacer"></div>
+
+      <div class="hero__title">
+        <span class="kicker kicker--gold" data-reveal>Fine dining · European kitchen</span>
+        <h1 class="display" data-reveal data-delay="100">Auré</h1>
+        <p class="hero__lead" data-reveal data-delay="200">A restaurant of quiet precision. Seasonal European cooking, served one considered plate at a time.</p>
+        <div class="rule-marks" data-reveal data-delay="300">
+          <span class="rule-marks__on"></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTERIOR BAND ============ -->
+  <section id="interior" class="interior">
+    <img class="interior__frame" data-reveal="zoom" src="img/interior.jpg">
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <h2 class="heading" data-reveal><em>About</em> our table</h2>
+      <div class="about__cols">
+        <p data-reveal data-delay="100">Auré began with a simple idea: let the ingredient lead. Our kitchen works closely with regional farmers and artisan producers, building each menu around what the season offers rather than what convention expects.</p>
+        <p data-reveal data-delay="200">The result is food both familiar and new — classic technique applied with restraint, plated with intention. Every service is composed like a piece of music: unhurried, deliberate, and quietly generous.</p>
+      </div>
+
+      <div class="stats">
+        <div class="stats__cell" data-reveal data-delay="100"><div class="stats__num">2019</div><div class="stats__label">Established</div></div>
+        <div class="stats__cell" data-reveal data-delay="200"><div class="stats__num">Tasting</div><div class="stats__label">Seasonal menu</div></div>
+        <div class="stats__cell" data-reveal data-delay="300"><div class="stats__num">Regional</div><div class="stats__label">Farm &amp; market sourced</div></div>
+        <div class="stats__cell" data-reveal data-delay="400"><div class="stats__num">Twelve</div><div class="stats__label">Tables only</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section id="menu" class="section section--menu">
+    <div class="wrap menu__head" data-reveal>
+      <h2 class="heading"><em>Our</em> menu</h2>
+      <div class="menu__arrows">
+        <button class="square-btn" data-menu-prev aria-label="Previous">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <button class="square-btn" data-menu-next aria-label="Next">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="menu__track" data-menu-track data-reveal="fade" data-delay="150">
+      <article class="dish">
+        <img class="dish__img" src="img/images (1).jpg"></img>
+        <div class="dish__meta"><span class="dish__name">Coq au vin</span><span class="dish__tag">Main</span></div>
+      </article>
+      <article class="dish dish--drop">
+       <img class="dish__img" src="img/tomato-peach-burrata-salad-1.jpg">
+        <div class="dish__meta"><span class="dish__name">Burrata, heirloom tomato</span><span class="dish__tag">To begin</span></div>
+      </article>
+      <article class="dish">
+        <img class="dish__img" src="img/images.jpg">
+        <div class="dish__meta"><span class="dish__name">Wild mushroom risotto</span><span class="dish__tag">Small plate</span></div>
+      </article>
+      <article class="dish dish--drop">
+        <img class="dish__img" src="img/roastedlambrack-1.jpg">
+        <div class="dish__meta"><span class="dish__name">Herb-crusted lamb rack</span><span class="dish__tag">Main</span></div>
+      </article>
+      <article class="dish">
+        <img class="dish__img" src="img/Homemade-beef-tartare-on-a-bed-of-arugula-with-an-egg-yolk-on-top.jpg">
+        <div class="dish__meta"><span class="dish__name">Steak tartare</span><span class="dish__tag">To begin</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ RESERVATION ============ -->
+  <section id="reservation" class="section section--ruled">
+    <div class="wrap">
+      <span class="kicker" data-reveal>Auré · reservations</span>
+      <h2 class="heading heading--mt" data-reveal data-delay="100"><em>reserve</em> your table</h2>
+
+      <div class="reserve__grid">
+        <div class="reserve__aside" data-reveal="left" data-delay="150">
+          <img class="reserve__photo ph" src="img/reserve.avif" data-ph="Photo">
+          <div class="panel">
+            <div class="panel__title">What to expect</div>
+            <ul class="ticks">
+              <li><span>—</span>Quiet, considered dining room seating twelve tables</li>
+              <li><span>—</span>A seasonal tasting menu with European wine pairings</li>
+              <li><span>—</span>Suited to occasions, quiet dinners and small gatherings</li>
+              <li><span>—</span>Open kitchen; chef's counter available on request</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <div class="panel__kicker">Cancellation policy</div>
+            <p class="panel__body">Free cancellation up to 24 hours before your reservation. For changes, please contact us and we will do our best to accommodate.</p>
+          </div>
+        </div>
+
+        <form class="reserve__form" data-reveal="right" data-delay="200" onsubmit="return false">
+          <div class="field">
+            <label>Full name <span class="req">*</span></label>
+            <input type="text" placeholder="Your name">
+          </div>
+          <div class="field-row">
+            <div class="field"><label>Email <span class="req">*</span></label><input type="email" placeholder="you@email.com"></div>
+            <div class="field"><label>Phone <span class="req">*</span></label><input type="tel" placeholder="+998 90 000 00 00"></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label>Date</label><input type="date"></div>
+            <div class="field"><label>Guests</label>
+              <select><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option><option>7+ guests</option></select>
+            </div>
+          </div>
+          <div class="field">
+            <label>Time slot</label>
+            <div class="slots" data-slots>
+              <button type="button" class="slot">17:00</button>
+              <button type="button" class="slot">17:30</button>
+              <button type="button" class="slot">18:00</button>
+              <button type="button" class="slot">18:30</button>
+              <button type="button" class="slot">19:00</button>
+              <button type="button" class="slot is-active">19:30</button>
+              <button type="button" class="slot">20:00</button>
+              <button type="button" class="slot">20:30</button>
+              <button type="button" class="slot">21:00</button>
+              <button type="button" class="slot">21:30</button>
+              <button type="button" class="slot">22:00</button>
+              <button type="button" class="slot">22:30</button>
+            </div>
+          </div>
+          <div class="field">
+            <label>Occasion <span class="opt">(optional)</span></label>
+            <select><option>Select an occasion</option><option>Birthday</option><option>Anniversary</option><option>Business dinner</option><option>Celebration</option><option>Other</option></select>
+          </div>
+          <div class="field">
+            <label>Special requests <span class="opt">(optional)</span></label>
+            <textarea rows="4" placeholder="Dietary needs, preferred seating, wine preferences…"></textarea>
+          </div>
+          <button type="submit" class="btn-confirm">
+            Confirm reservation
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <p class="form-note">By confirming, you agree to our cancellation policy.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUOTE BAND ============ -->
+  <section class="quote">
+    <div class="wrap wrap--narrow" data-reveal="zoom">
+      <span class="kicker kicker--gold">On cooking</span>
+      <blockquote class="quote__text">“Cooking is editing. We keep removing until only the essential remains.”</blockquote>
+      <span class="quote__by">— The kitchen at Auré</span>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS ============ -->
+  <section id="events" class="section">
+    <div class="wrap events__grid">
+      <img class="events__photo ph" data-ph="Event photo" src="img/events.jpg" data-reveal="left">
+      <div data-reveal="right" data-delay="150">
+        <span class="kicker">Auré · gatherings</span>
+        <h2 class="heading heading--mt heading--sm"><em>restaurant</em> events</h2>
+        <div class="events__list">
+          <div class="event" data-reveal data-delay="200"><span class="event__date">15 SEN</span><div><div class="event__title">Wine &amp; Dine · 19:00 — $550</div><p class="event__desc">An evening pairing our winter menu with small-production European wines.</p></div></div>
+          <div class="event" data-reveal data-delay="300"><span class="event__date">16 OKT</span><div><div class="event__title">Beverage Workshop — $85</div><p class="event__desc">A guided tasting through our cellar with the head sommelier.</p></div></div>
+          <div class="event event--last" data-reveal data-delay="400"><span class="event__date">20 DEC</span><div><div class="event__title">Culinary Workshop — $75</div><p class="event__desc">Learn the craft of hand-cut pasta in our open kitchen.</p></div></div>
+        </div>
+        <a href="#reservation" class="btn-confirm btn-confirm--inline">
+          Book now
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top" data-reveal>
+        <div class="footer__brand">
+          <div class="footer__logo">Auré</div>
+          <p>European cooking, quietly composed. Reservations recommended for weekends.</p>
+        </div>
+        <div class="footer__cols">
+          <nav class="footer__links">
+            <a href="#reservation">Reservation</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#interior">Interior</a>
+            <a href="#events">Events</a>
+          </nav>
+          <div class="footer__contact">
+            <span>Amir Temur Avenue, Tashkent</span>
+            <span>+998 90 00 00 00</span>
+            <a href="mailto:hello@aure.com">hello@aure.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom" data-reveal data-delay="100">
+        <span>2026 © Auré · All rights reserved</span>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.5-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.2V13h2.6v8z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
