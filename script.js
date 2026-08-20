@@ -165,14 +165,41 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // --------------------------------------------------------------------------
-  // 4. Reservation Time Slots Selection
+  // 5. Custom Cursor Follower
   // --------------------------------------------------------------------------
-  var slots = document.querySelectorAll('[data-slots] .slot');
-  slots.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      slots.forEach(function (b) { b.classList.remove('is-active'); });
-      btn.classList.add('is-active');
+  var dot = document.getElementById('cursor-dot');
+  var ring = document.getElementById('cursor-ring');
+
+  if (dot && ring) {
+    var mouseX = -100, mouseY = -100;
+    var ringX = -100, ringY = -100;
+
+    window.addEventListener('mousemove', function (e) {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      dot.style.left = mouseX + 'px';
+      dot.style.top = mouseY + 'px';
+      document.body.classList.remove('cursor-hidden');
     });
-  });
+
+    document.addEventListener('mouseleave', function () {
+      document.body.classList.add('cursor-hidden');
+    });
+
+    function renderCursor() {
+      ringX += (mouseX - ringX) * 0.15;
+      ringY += (mouseY - ringY) * 0.15;
+      ring.style.left = ringX + 'px';
+      ring.style.top = ringY + 'px';
+      requestAnimationFrame(renderCursor);
+    }
+    requestAnimationFrame(renderCursor);
+
+    var hoverables = document.querySelectorAll('a, button, input, select, textarea, .dish, .slot, .square-btn');
+    hoverables.forEach(function (el) {
+      el.addEventListener('mouseenter', function () { document.body.classList.add('cursor-hover'); });
+      el.addEventListener('mouseleave', function () { document.body.classList.remove('cursor-hover'); });
+    });
+  }
 
 });

@@ -11,6 +11,9 @@
 </head>
 <body id="top">
 
+    <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+  
   <!-- ============ OVERLAY / BURGER MENU ============ -->
   <div class="overlay-menu" id="overlay-menu" aria-hidden="true">
     <div class="overlay-menu__scrim" data-burger-close></div>
@@ -59,39 +62,63 @@
     </div>
   </div>
 
+  <!-- ============ FIXED HEADER ============ -->
+  <header class="header">
+    <div class="wrap header__wrap">
+      <nav class="nav">
+        <a href="#top" class="nav__brand">Auré</a>
+        <div class="nav__actions">
+          <a href="#reservation" class="btn-outline btn-outline--reserve">Reservation</a>
+          <button class="icon-btn" aria-label="Open menu" data-burger-toggle aria-expanded="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
   <!-- ============ HERO ============ -->
   <section class="hero">
-    <!-- Replace with <img> or set background-image on .hero__bg in styles.css -->
     <img class="hero__bg" src="img/hero.jpg">
     <div class="hero__scrim"></div>
 
     <div class="hero__inner">
-      <div class="meta-bar">
-        <span>Amir Temur Avenue&nbsp;· TASHKENT</span>
-        <span>Open Tue–Sun · 8:00 – 23:00</span>
+      <!-- Main Hero Content (Centered vertically & 2-column layout) -->
+      <div class="hero__body">
+        <div class="hero__content">
+          <span class="kicker kicker--gold" data-reveal>Amir Temur Avenue · Tashkent</span>
+          <h1 class="display" data-reveal data-delay="100">Auré</h1>
+          <p class="hero__lead" data-reveal data-delay="200">A restaurant of quiet precision. Seasonal European cooking, served one considered plate at a time.</p>
+
+          <div class="hero__buttons" data-reveal data-delay="300">
+            <a href="#reservation" class="btn-primary">Reserve a table</a>
+            <a href="#menu" class="btn-ghost">View Menu</a>
+          </div>
+
+          <div class="hero__status" data-reveal data-delay="400">
+            <span class="status-dot"></span>
+            <span>Open Tue–Sun · 8:00 – 23:00</span>
+          </div>
+        </div>
+
+        <!-- Right Column Stats & Feature Tags (Reference Photo Style) -->
+        <div class="hero__aside" data-reveal="right" data-delay="200">
+          <div class="hero__stat-num">12</div>
+          <div class="hero__stat-label">Tables Only · Fine Dining</div>
+
+          <div class="hero__tags">
+            <span class="hero__tag">Seasonal Menu</span>
+            <span class="hero__tag">European Wines</span>
+            <span class="hero__tag">Open Kitchen</span>
+            <span class="hero__tag">Chef's Counter</span>
+          </div>
+        </div>
       </div>
 
-      <nav class="nav">
-        <a href="#top" class="nav__brand">Auré</a>
-        <div class="nav__actions">
-          <button class="icon-btn" aria-label="Open menu" data-burger-toggle aria-expanded="false">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-          </button>
-          <a href="#reservation" class="btn-outline">Reservation</a>
-        </div>
-      </nav>
-
-      <div class="hero__spacer"></div>
-
-      <div class="hero__title">
-        <span class="kicker kicker--gold" data-reveal>Fine dining · European kitchen</span>
-        <h1 class="display" data-reveal data-delay="100">Auré</h1>
-        <p class="hero__lead" data-reveal data-delay="200">A restaurant of quiet precision. Seasonal European cooking, served one considered plate at a time.</p>
-        <div class="rule-marks" data-reveal data-delay="300">
-          <span class="rule-marks__on"></span>
-          <span></span>
-          <span></span>
-        </div>
+      <!-- Bottom Scroll Indicator -->
+      <div class="hero__scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
       </div>
     </div>
   </section>
